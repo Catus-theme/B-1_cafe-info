@@ -1,0 +1,53 @@
+extends template/layout.pug
+block title
+  title :: CATUS CAFE - 문의하기 ::
+block append font
+block append css
+block append script
+block append section
+block append aside
+block article
+  div#fh5co-main.contact-bg
+    div.fh5co-narrow-content
+      h2.fh5co-heading.animate-box(data-animate-effect="fadeInLeft") CONTACT US 
+      div.row
+        div.col-md-4
+          div.fh5co-feature.fh5co-feature-sm.animate-box(data-animate-effect="fadeInLeft")
+            div.fh5co-icon
+              i.icon-envelope-o
+            div.fh5co-text
+              p
+                a(href="#") info@google.com
+        div.col-md-4
+          div.fh5co-feature.fh5co-feature-sm.animate-box(data-animate-effect="fadeInLeft")
+            div.fh5co-icon
+              i.icon-map-o
+            div.fh5co-text
+              p 서울특별시 강남구 서초동 000 빌딩 
+        div.col-md-4
+          div.fh5co-feature.fh5co-feature-sm.animate-box(data-animate-effect="fadeInLeft")
+            div.fh5co-icon
+              i.icon-phone
+            div.fh5co-text
+              p
+                a(href="tel://") +123 456 7890
+    div.fh5co-narrow-content.animate-box(data-animate-effect="fadeInLeft")
+      div.row
+        div.col-md-4
+          h1 Get In Touch
+      form(action="")
+        div.row
+          div.col-md-12
+            div.row
+              div.col-md-6
+                div.form-group
+                  input.form-control(type='text' placeholder="Name")
+                div.form-group
+                  input.form-control(type='text' placeholder="Email")
+                div.form-group
+                  input.form-control(type='text' placeholder="Phone")
+              div.col-md-6
+                div.form-group
+                  textarea(name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message")
+                div.form-group
+                  input.btn.btn-primary.btn-md(type='submit' value="문의하기")

@@ -121,6 +121,7 @@
 		$('.js-fh5co-nav-toggle').on('click', function(event){
 			event.preventDefault();
 			var $this = $(this);
+			console.log($this);
 			if ($('body').hasClass('offcanvas')) {
 				$this.removeClass('active');
 				$('body').removeClass('offcanvas');	
@@ -130,7 +131,19 @@
 			}
 		});
 	};
-
+  var activeMenu = function() {
+    $(document).ready(function(){
+			var menuAnchors = $('#fh5co-main-menu ul li a');
+			var curentPath = $('body')[0].dataset.urlPath;
+			for(var i = 0; i < menuAnchors.length; i++){
+				var anchor = menuAnchors[i];
+				var anchorPath = anchor.pathname;
+				var LI = anchor.parentNode; 
+				if(anchorPath == curentPath) LI.classList.add('fh5co-active');
+			 	else LI.classList.remove('fh5co-active');
+			}
+		})
+	}
 	// Click outside of offcanvass
 	var mobileMenuOutsideClick = function() {
 		$(document).click(function (e) {
@@ -145,7 +158,6 @@
 
 		$(window).scroll(function(){
 			if ( $('body').hasClass('offcanvas') ) {
-
     			$('body').removeClass('offcanvas');
     			$('.js-fh5co-nav-toggle').removeClass('active');
 			
@@ -156,6 +168,7 @@
 
 	// Document on load.
 	$(function(){
+		activeMenu();
 		fullHeight();
 		parallax();
 		testimonialCarousel();

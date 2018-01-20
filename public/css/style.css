@@ -40,8 +40,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #000;
-  font-family: "Montserrat", Arial, sans-serif;
+  color: #fff ;
   font-weight: 700;
   margin: 0 0 30px 0;
 }
@@ -54,17 +53,14 @@ figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #da1212;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #da1212;
 }
 
 ::selection {
   color: #fff;
-  background: #da1212;
 }
 
 #fh5co-page {
@@ -198,6 +194,10 @@ figure {
     bottom: 0;
   }
 }
+#fh5co-aside .fh5co-footer .payment-box span {
+  padding-left: 2vw;
+  text-align: left; 
+}
 #fh5co-aside .fh5co-footer span {
   display: block;
 }
@@ -228,7 +228,21 @@ figure {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  background-color: #fafafafa;
+}
+.main-bg {
+  background: linear-gradient(to right,rgba(68, 57, 50, .8),rgba(68, 57, 50, 0.5));
+}
+.coffee-bg {
+  background: linear-gradient(to right,rgba(68, 57, 50, .5),rgba(44, 54, 58, .8))
+}
+.about-bg {
+  background: linear-gradient(to right,rgba(44, 54, 58, .8),rgba(44, 54, 58, .5))
+}
+.bean-bg {
+  background: linear-gradient(to right,rgba(44, 54, 58, .5),rgba(68, 57, 50, .8))
+}
+.contact-bg {
+  background: linear-gradient(to right,rgba(68, 57, 50, .8),rgba(68, 57, 50, 0.5));
 }
 @media screen and (max-width: 1200px) {
   #fh5co-main {
@@ -247,8 +261,9 @@ figure {
   padding: 4em 0;
 }
 h2.fh5co-heading {
-  color: #333;
-  text-shadow: 3px 3px 7px #999;
+  font-family: 'Amatic SC', cursive;
+  color: #fff;
+  text-shadow: 4px 4px 7px #333;
 }
 @media screen and (max-width: 768px) {
   #fh5co-main .fh5co-narrow-content {
@@ -297,7 +312,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 }
 .work-item a h3 {
   font-size: 20px;
-  color: #000;
+  color: #fff;
   margin-bottom: 10px;
 }
 .work-item a p {
@@ -309,9 +324,11 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   text-decoration: none;
 }
 .work-item a:hover img, .work-item a:active img, .work-item a:focus img {
-  border: 10px solid #eee;
+ box-shadow: 2px 2px 60px #333;
 }
-
+.fh5co-work-title strong {
+  color: rgb(199, 16, 16);
+}
 .fh5co-services {
   margin-top: 5px;
 }
@@ -320,7 +337,6 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   padding: 0;
   margin: 0;
 }
-
 .work-pagination {
   padding: 3em 0;
 }
@@ -414,12 +430,21 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   margin-bottom: 2em;
   display: block;
 }
-
 .fh5co-lead {
   font-size: 24px;
   line-height: 1.5;
 }
-
+.menus {
+  text-align: center;
+}
+.menus img {
+  width: 50%;
+  transition: all .5s;
+  margin: 0 auto 1.5em auto;
+}
+.menus img:hover {
+  width: 55%;
+}
 .fh5co-heading-colored {
   color: #da1212;
 }
@@ -585,7 +610,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   margin-top: 5px;
 }
 .fh5co-feature .fh5co-icon i {
-  color: #da1212;
+  color: #fff;
   font-size: 70px;
 }
 @media screen and (max-width: 1200px) {
@@ -594,7 +619,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   }
 }
 .fh5co-feature.fh5co-feature-sm .fh5co-icon i {
-  color: #da1212;
+  color: #fff;
   font-size: 28px;
 }
 @media screen and (max-width: 1200px) {
@@ -605,6 +630,10 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 .fh5co-feature .fh5co-text {
   float: right;
   width: 80%;
+}
+.fh5co-feature .fh5co-text a,
+.fh5co-feature .fh5co-text p {
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   .fh5co-feature .fh5co-text {
@@ -949,14 +978,14 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active {
   box-shadow: none;
 }
-
 .form-control {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   box-shadow: none;
   background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
   height: 54px;
   font-size: 18px;
   font-weight: 300;
@@ -968,7 +997,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #da1212;
+  border: 4px solid #fff;
 }
 
 #message {
@@ -980,10 +1009,10 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   text-decoration: none;
 }
 .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
-  background: #000;
+  background: #fff;
 }
 .fh5co-nav-toggle.dark.active i::before, .fh5co-nav-toggle.dark.active i::after {
-  background: #000;
+  background: #fff;
 }
 .fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active {
   outline: none;
@@ -997,18 +1026,18 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   *display: inline;
   width: 30px;
   height: 2px;
-  color: #000;
+  color: #fff;
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #000;
+  background: #fff;
   transition: all .2s ease-out;
 }
 .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
   content: '';
   width: 30px;
   height: 2px;
-  background: #000;
+  background: #fff;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
@@ -1017,12 +1046,12 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 }
 .fh5co-nav-toggle.dark i {
   position: relative;
-  color: #000;
-  background: #000;
+  color: #fff;
+  background: #fff !important;
   transition: all .2s ease-out;
 }
 .fh5co-nav-toggle.dark i::before, .fh5co-nav-toggle.dark i::after {
-  background: #000;
+  background: #fff !important;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;

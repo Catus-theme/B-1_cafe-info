@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+html.no-js(lang="en") <!--<![endif]-->
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="description" content="cafe-landing")
+    meta(name="keywords" content="bootstrap, html5, css3, responsive, js")
+    meta(name="author" content="catus")
+    jlink(rel="shortcut icon" href="favicon.ico")
+    block title
+    block font
+      link(href='https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic,700' rel='stylesheet' type='text/css')
+      link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
+      link(href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet")
+      link(href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet")
+    block css
+      <!-- Animate.css -->
+      link(rel="stylesheet" href="public/css/animate.css")
+      <!-- Icomoon Icon Fonts-->
+      link(rel="stylesheet" href="public/css/icomoon.css")
+      <!-- Bootstrap  -->
+      link(rel="stylesheet" href="public/css/bootstrap.css")
+      <!-- Owl Carousel -->
+      link(rel="stylesheet" href="public/css/owl.carousel.min.css")
+      link(rel="stylesheet" href="public/css/owl.theme.default.min.css")
+      <!-- Theme style  -->
+      link(rel="stylesheet" href="public/css/style.css")
+    block script
+      <!-- Modernizr JS -->
+      script(src="public/js/modernizr-2.6.2.min.js" defer)
+      <!-- FOR IE9 below -->
+      <!--[if lt IE 9]>
+      script(src="public/js/respond.min.js" defer)
+      <![endif]-->
+      <!-- jQuery -->
+      script(src="public/js/jquery.min.js" defer)
+      <!-- jQuery Easing -->
+      script(src="public/js/jquery.easing.1.3.js" defer)
+      <!-- Bootstrap -->
+      script(src="public/js/bootstrap.min.js" defer)
+      <!-- Carousel -->
+      script(src="public/js/owl.carousel.min.js" defer)
+      <!-- Stellar -->
+      script(src="public/js/jquery.stellar.min.js" defer)
+      <!-- Waypoints -->
+      script(src="public/js/jquery.waypoints.min.js" defer)
+      <!-- Counters -->
+      script(src="public/js/jquery.countTo.js" defer)
+      <!-- MAIN JS -->
+      script(src="public/js/main.js" defer)
+  body(data-url-path=path)
+    block header
+    block section
+      section#fh5co-page
+        block aside
+          include ../include/nav.pug
+        block article
