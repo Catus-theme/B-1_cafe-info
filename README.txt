@@ -1,4 +1,10 @@
+** CATUS Themes
 
+NO.B-1_cafe-info
+
+:: copyright - Adams / CATUS
+
+2018.01.20 
 
 
 CREDITS:
@@ -9,8 +15,6 @@ http://getbootstrap.com/
 jQuery
 http://jquery.com/
 
-jQuery Easing
-http://gsgd.co.uk/sandbox/jquery/easing/
 
 Modernizr
 http://modernizr.com/
@@ -37,12 +41,6 @@ http://plmd.me/
 Owl Carousel
 http://www.owlcarousel.owlgraphic.com/
 
-Stellar Parallax
-http://markdalgleish.com/projects/stellar.js/
-
 jQuery counTo
 https://github.com/mhuggins/jquery-countTo
-
-Google Map
-https://maps.google.com/
 
