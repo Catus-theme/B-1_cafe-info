@@ -1,0 +1,24 @@
+{
+  "name": "b-1_cafe-info",
+  "version": "1.0.0",
+  "description": "CREDITS:",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Catus-theme/Cafe_Landing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Catus-theme/Cafe_Landing/issues"
+  },
+  "homepage": "https://github.com/Catus-theme/Cafe_Landing#readme"
+}
